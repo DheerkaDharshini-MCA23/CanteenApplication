@@ -3,6 +3,7 @@ import '../styles/addItem.css'; // Import the CSS file
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
   import { useNavigate,useParams } from 'react-router-dom';
+import Footer from './footer';
 
 
 function AddItem() {
@@ -128,6 +129,7 @@ function AddItem() {
         </label>
         <input type="submit" value={id?'Update Item':'Add Item'} className="form-submit" />
       </form>
+      <Footer/>
     </div>
   );
 }
